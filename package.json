@@ -1,0 +1,28 @@
+{
+  "name": "mern-memories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run start --prefix server",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "npm run test --prefix server && npm run test --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamtran2885/mern-memories.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamtran2885/mern-memories/issues"
+  },
+  "homepage": "https://github.com/tamtran2885/mern-memories#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
