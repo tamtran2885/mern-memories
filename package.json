@@ -10,6 +10,7 @@
     "server": "npm run start --prefix server",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "concurrently \"npm run build --prefix client\" \"npm run start --prefix server\" ",
     "test": "npm run test --prefix server && npm run test --prefix client"
   },
   "repository": {
