@@ -7,6 +7,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 import postRoutes from "./routes/posts.route.js";
+import userRoutes from "./routes/users.route.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,6 +25,7 @@ app.use(
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/posts", postRoutes);
+app.use("/user", userRoutes);
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
