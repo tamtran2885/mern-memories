@@ -4,7 +4,7 @@ const API = axios.create({ baseURL: "http://localhost:4000" });
 
 // const url = "http://localhost:4000/posts";
 
-// include token in every request
+// include token in every request to be verified by middleware from backend
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
     req.headers.Authorization = `Bearer ${
