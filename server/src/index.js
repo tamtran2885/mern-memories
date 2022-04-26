@@ -6,8 +6,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import postRoutes from "../routes/posts.route.js";
-import userRoutes from "../routes/users.route.js";
+import postRoutes from "./routes/posts.route.js";
+import userRoutes from "./routes/users.route.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
