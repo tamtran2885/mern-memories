@@ -5,6 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
     "start": "node src/index.js",
     "watch": "nodemon src/index.js"
   },
@@ -20,5 +22,9 @@
     "mern-memories": "file:..",
     "mongoose": "^6.2.10",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "jest": "^28.0.1",
+    "supertest": "^6.2.2"
   }
 }
