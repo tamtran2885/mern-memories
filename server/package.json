@@ -20,11 +20,11 @@
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "mern-memories": "file:..",
-    "mongoose": "^6.2.10",
-    "nodemon": "^2.0.15"
+    "mongoose": "^6.2.10"
   },
   "devDependencies": {
     "jest": "^28.0.1",
-    "supertest": "^6.2.2"
+    "supertest": "^6.2.2",
+    "nodemon": "^2.0.15"
   }
 }
